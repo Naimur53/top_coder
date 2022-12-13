@@ -20,7 +20,7 @@ const DetailsInfo = ({ status, species, gender, origin, location, episode }) => 
         }
     }, [episode])
 
-    const baseURl = '/assets/Media asset/cast Details/Icons/PNG/'
+    const baseURl = '/assets/Media asset/Cast Details/Icons/PNG/'
     const info = [
         { name: 'Status', value: status, img: process.env.PUBLIC_URL + baseURl + 'Status.png' },
         { name: 'Species', value: species, img: process.env.PUBLIC_URL + baseURl + 'Species.png' },
