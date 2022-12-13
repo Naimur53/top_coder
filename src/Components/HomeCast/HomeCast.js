@@ -21,16 +21,19 @@ const HomeCast = () => {
     }
     console.log(upSwiper)
     return (
-        <div className='container px-[30px] 2xl:px-[20px]'>
+        <div className=' px-[30px] 2xl:px-[90px]'>
 
             <div className='flex justify-between items-center mb-[25px]'>
                 <div className='flex '>
                     <h3 className='text-[16px] md:text-xl'>Meet the cast</h3>
-                    {/* <div className='ml-2'>
+                    <div className=' md:hidden flex ml-2'>
                         <div onClick={() => upSwiper.slidePrev()}>
                             <img src="https://i.ibb.co/bdhLV5h/Frame.png" alt="" />
                         </div>
-                    </div> */}
+                        <div onClick={() => upSwiper.slideNext()}>
+                            <img src="https://i.ibb.co/mt0cCXh/Frame-1.png" alt="" />
+                        </div>
+                    </div>
                 </div>
                 <Link to='/cast'>
                     <button className='text-[8px] md:text-md py-[6px] md:py-[10px] px-[16px] md:px-[24px] rounded-[8px] border border-main-green'>View All</button>

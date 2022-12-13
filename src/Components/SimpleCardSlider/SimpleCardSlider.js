@@ -15,7 +15,7 @@ const SimpleCardSlider = ({ name, className }) => {
 
     return (
         <div className={className}>
-            <div className='container px-[20px] 2xl:px-[20px]'>
+            <div className='custom-container'>
 
                 <div className='flex justify-between items-center mb-[21px] md:mb-[25px]'>
                     <h3 className='text-base md:text-xl capitalize'>{name + "s"}</h3>

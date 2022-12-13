@@ -8,7 +8,7 @@ const Dropdown = () => {
         setOpen(false)
     }
     return (
-        <div className='flex justify-center rounded-full border border-red-300'>
+        <div className='flex justify-center rounded-full gradient-border input-main-wrap'>
             <div className="relative inline-block text-left">
                 <div>
                     <button onClick={() => setOpen(pre => !pre)} type="button" className="inline-flex w-full justify-center items-center rounded-tl-full rounded-bl-full pr-[15px]  bg-main-blue pl-[12px] md:pl-[32px] py-[7px] md:py-[17px] font-semibold  text-[8px]  md:text-base " id="menu-button" aria-expanded="true" aria-haspopup="true">

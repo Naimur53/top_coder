@@ -57,7 +57,7 @@ const BannerText = () => {
                     </div>
                 </div>
 
-                <div className='absolute right-[-40px] top-[80px] md:-right-28 2xl:-right-24 md:top-1/4 md:translate-y-0 '>
+                <div className='absolute right-[-58px] top-[80px] md:-right-28 2xl:-right-[1%] md:top-1/4 md:translate-y-0 '>
                     <img className='w-[119px] md:w-full' src={process.env.PUBLIC_URL + '/assets/Media asset/Home page/Hero Elements/Gun.png'} alt="" />
                 </div>
 

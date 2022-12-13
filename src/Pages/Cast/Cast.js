@@ -53,7 +53,7 @@ const Cast = () => {
                                 }
 
                             </div>
-                            <div className="px-[22px] md:px-[40px] py-[5px] md:py-[10px] rounded-full border text-main-blue">
+                            <div className="px-[22px] md:px-[40px] py-[5px] md:py-[10px] rounded-full gradient-border text-main-blue ">
                                 <span>{url.split('=')[1] ?? 1}</span>
                             </div>
                             <div className="w-[13px] md:w-full ">

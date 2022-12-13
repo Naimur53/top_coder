@@ -9,7 +9,7 @@ const HomeBanner = () => {
             <TopLogo></TopLogo>
 
 
-            <div className="container pb-[85px]">
+            <div className="custom-container pb-[85px]">
                 <BannerText></BannerText>
             </div>
             <div>

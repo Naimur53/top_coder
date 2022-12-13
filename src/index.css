@@ -4,6 +4,7 @@
 
 :root{
   --main-path: polygon(100% 74%, 100% 82%, 97% 87%, 73% 100%, 0 100%, 0 0, 100% 0);
+  --simple-path: polygon(100% 60%, 98% 66%, 98% 66%, 76% 100%, 0 100%, 0 0, 100% 0)
 }
 
 body {
@@ -62,18 +63,19 @@ code {
     background-size: cover,95%;
     background-position: center,50% 80%;
 
-    @apply bg-[url(https://i.ibb.co/Q9DJvRQ/Backgraund.png)] md:bg-[url(https://i.ibb.co/GpbkHzJ/Background.png),url(https://i.ibb.co/jHqYzhC/Star.png)]
+    @apply bg-[url(https://i.ibb.co/Q9DJvRQ/Backgraund.png)] md:bg-[url(https://i.ibb.co/GpbkHzJ/Background.png),url(https://i.ibb.co/jHqYzhC/Star.png)] 
   }
 } 
 @layer base {
   
+  .custom-container{
+    @apply px-[20px] md:px-[90px]
+  }
   /* bottom cut card */
-  .cut-card{ 
-
+  .cut-card{  
     clip-path:var(--main-path);
     /* box-shadow: 2px 2px 20px 10px red; */ 
-    filter:url(#round);
-
+    filter:url(#round); 
     @apply relative rounded-[12px]
   }
   .cut-card::before,.cut-card::after{
@@ -87,12 +89,51 @@ code {
     z-index: -2;
     @apply rounded-[12px]
   }
+  
   .cut-card::before{
     background: #262a37;
     z-index: -1;
     scale: .99; 
     @apply rounded-[12px]
   }
+
+  
+  .cut-card2{  
+    clip-path:var(--simple-path);
+    /* box-shadow: 2px 2px 20px 10px red; */ 
+    filter:url(#round); 
+    @apply relative rounded-[12px]
+  }
+  .cut-card2::before,.cut-card2::after{
+    content: '';
+    clip-path: var(--simple-path); 
+    @apply block inset-0 rounded-[12px] absolute
+  }
+  .cut-card2::after{
+    background-image: linear-gradient(380deg, rgba(132, 247, 41, 0.7) -5.31%, rgba(21, 191, 253, 0.7) 91.15%); 
+    /* background-position: 10% 10%; */ 
+    z-index: -2;
+    @apply rounded-[12px]
+  }
+  .cut-card2::before{
+    background: #262a37;
+    z-index: -1;
+    scale: .99 .96; 
+    @apply rounded-[12px]
+  }
+
+  .gradient-border{ 
+
+    border-right: 1px solid rgba(132, 247, 41, 0.7);
+    border-left: 1px solid rgba(21, 191, 253, 0.7);
+    border-bottom: 1px solid  rgba(132, 247, 41, 0.7);
+    border-top:1px solid rgba(21, 191, 253, 0.7); 
+    background-size:0px 100%;
+    background-position:0 0, 100% 0;
+    background-repeat:no-repeat;
+  }
+
+  
   .top-text-gradient-shadow{
     background: linear-gradient(99.46deg, #9DFE00 -10.9%, #14D9E6 97.14%); 
     
@@ -108,7 +149,7 @@ code {
  
   .details-box{
     background-color: rgba(255, 255, 255, 0.05);
-    @apply rounded-[8px] px-[13px] md:px-[32px]  py-[8px] md:py-[16px]
+    @apply gradient-border rounded-[8px] px-[13px] md:px-[32px]  py-[8px] md:py-[16px]
   }
   .drop-item{
     @apply block px-4 py-[14px]   border-b border-[#F2F2F2]/[0.6] font-semibold text-[8px] md:text-base

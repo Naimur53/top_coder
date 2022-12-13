@@ -5,7 +5,7 @@ const CastCard = ({ data }) => {
     // console.log(data)
     return (
         <NavLink to={'/details/' + data.id} className='cut-card block select-none px-[8px] md:px-16  bg-transparent pt-[8px] md:pt-16'>
-            <div>
+            <div className='flex justify-center' >
                 <img className='rounded-[2px] md:rounded-[3px]' src={data.image} alt="" />
             </div>
             <div>
