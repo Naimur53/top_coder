@@ -26,7 +26,11 @@ module.exports = {
         md: ['18px', '21px'],
         lg: ['20px', '24px'],
         xl: ['24px', '29px'],
-        "extra-large": ['128px', '153px'],
+        'semi-xl': ['40px', '45px'],
+        'mid-xl': ['48px', '57px'],
+        xxl: ['64px', '76px'],
+        '3xl': ['101px', '122px'],
+        'extra-large': ['128px', '153px'],
 
       },
       fontFamily: {

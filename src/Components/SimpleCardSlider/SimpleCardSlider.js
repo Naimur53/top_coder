@@ -15,10 +15,10 @@ const SimpleCardSlider = ({ name, className }) => {
 
     return (
         <div className={className}>
-            <div className='container px-[30px] 2xl:px-[20px]'>
+            <div className='container px-[20px] 2xl:px-[20px]'>
 
-                <div className='flex justify-between items-center mb-[25px]'>
-                    <h3 className='text-xl capitalize'>{name + "s"}</h3>
+                <div className='flex justify-between items-center mb-[21px] md:mb-[25px]'>
+                    <h3 className='text-base md:text-xl capitalize'>{name + "s"}</h3>
 
                 </div>
                 <div className=''>
@@ -26,8 +26,8 @@ const SimpleCardSlider = ({ name, className }) => {
                         breakpoints={{
                             // when window width is >= 640px
                             320: {
-                                slidesPerView: 1,
-                                spaceBetween: 32
+                                slidesPerView: 2.1,
+                                spaceBetween: 13
                             },
                             // when window width is >= 768px
                             600: {

@@ -12,6 +12,12 @@ const CustomSlider = props => {
         isBeginning: true,
         isEnd: false
     });
+    useEffect(() => {
+        if (props?.getSwiper) {
+            props.getSwiper(my_swiper)
+        }
+
+    }, [props, my_swiper])
     return (
         <>
             <div className='relative'>
@@ -23,7 +29,6 @@ const CustomSlider = props => {
                         grabCursor={true}
                         onSlideChange={(ev) => {
                             set_my_swiper(ev)
-
                             set_my_swiper_status({
                                 isBeginning: ev.isBeginning,
                                 isEnd: ev.isEnd,

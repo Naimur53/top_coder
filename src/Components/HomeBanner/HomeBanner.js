@@ -5,9 +5,9 @@ import TopLogo from '../TopLogo/TopLogo';
 
 const HomeBanner = () => {
     return (
-        <div className="home-banner ">
-
+        <div className="md:home-banner ">
             <TopLogo></TopLogo>
+
 
             <div className="container pb-[85px]">
                 <BannerText></BannerText>
